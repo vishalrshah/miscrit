@@ -15,6 +15,7 @@
 		953B92B51DB6731A001AC1EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953B92B31DB6731A001AC1EA /* LaunchScreen.storyboard */; };
 		953B92C01DB6731A001AC1EA /* my_first_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953B92BF1DB6731A001AC1EA /* my_first_projectTests.swift */; };
 		953B92CB1DB6731A001AC1EA /* my_first_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953B92CA1DB6731A001AC1EA /* my_first_projectUITests.swift */; };
+		95DEDC151DB853C3001BAFB9 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DEDC141DB853C3001BAFB9 /* Pokemon.swift */; };
 		B1D8309C3310B2D097A26430 /* Pods_my_first_projectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA477F366DB93BC91B41B00 /* Pods_my_first_projectUITests.framework */; };
 		F1458E25BC2C8C1EDA226445 /* Pods_my_first_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DB767C6522E9BA0C4C1557 /* Pods_my_first_project.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		953B92C61DB6731A001AC1EA /* my first projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "my first projectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		953B92CA1DB6731A001AC1EA /* my_first_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = my_first_projectUITests.swift; sourceTree = "<group>"; };
 		953B92CC1DB6731A001AC1EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95DEDC141DB853C3001BAFB9 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		A2C6EDAA33A010B908A3FE3F /* Pods-my first projectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my first projectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-my first projectTests/Pods-my first projectTests.release.xcconfig"; sourceTree = "<group>"; };
 		E36C2836D29088E0F1A3736F /* Pods_my_first_projectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_my_first_projectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2ED20F493F12FCE2312049C /* Pods-my first projectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my first projectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-my first projectUITests/Pods-my first projectUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		953B92A91DB6731A001AC1EA /* my first project */ = {
 			isa = PBXGroup;
 			children = (
+				95DEDC131DB853A5001BAFB9 /* Model */,
 				953B92AA1DB6731A001AC1EA /* AppDelegate.swift */,
 				953B92AC1DB6731A001AC1EA /* ViewController.swift */,
 				953B92AE1DB6731A001AC1EA /* Main.storyboard */,
@@ -163,6 +166,14 @@
 				953B92CC1DB6731A001AC1EA /* Info.plist */,
 			);
 			path = "my first projectUITests";
+			sourceTree = "<group>";
+		};
+		95DEDC131DB853A5001BAFB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95DEDC141DB853C3001BAFB9 /* Pokemon.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +460,7 @@
 			files = (
 				953B92AD1DB6731A001AC1EA /* ViewController.swift in Sources */,
 				953B92AB1DB6731A001AC1EA /* AppDelegate.swift in Sources */,
+				95DEDC151DB853C3001BAFB9 /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
