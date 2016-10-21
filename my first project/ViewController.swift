@@ -104,7 +104,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        
+        var poke: Pokemon!
+        if inSearchMode{
+            poke = filteredpokemon[indexPath.row]
+        }
+        else
+        {
+            poke = pokemon[indexPath.row]
+        }
+        performSegue(withIdentifier: "DetailViewController", sender: poke)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -150,5 +158,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
         
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "DetailViewController" {
+            if let DetailVC = segue.destination as? DetailViewController{
+                if let poke = sender as? Pokemon {
+                    DetailVC.poke = poke
+                    
+                    }
+                }
+            }
+        }
 }
-

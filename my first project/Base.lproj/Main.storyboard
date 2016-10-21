@@ -129,11 +129,49 @@
                     <connections>
                         <outlet property="collection" destination="Dyn-U2-g9a" id="SUQ-Kw-YaW"/>
                         <outlet property="searchBar" destination="ekL-eS-5fi" id="mZa-sh-5YH"/>
+                        <segue destination="FLA-8Y-eDE" kind="show" identifier="DetailViewController" id="y1s-sK-lRd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-87.200000000000003" y="-76.011994002998506"/>
+            <point key="canvasLocation" x="-212" y="-105"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="ntA-Bf-xFJ">
+            <objects>
+                <viewController id="FLA-8Y-eDE" customClass="DetailViewController" customModule="my_first_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D1L-Xf-ena"/>
+                        <viewControllerLayoutGuide type="bottom" id="K46-GS-yN0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ujt-ly-sZR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjD-5m-cPb">
+                                <color key="backgroundColor" red="0.93539148569999997" green="0.40096473690000001" blue="0.40952983500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6sn-Po-mgr"/>
+                                    <constraint firstAttribute="height" constant="21" id="l7n-ha-Qdt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gjD-5m-cPb" firstAttribute="centerY" secondItem="Ujt-ly-sZR" secondAttribute="centerY" id="Bq1-z5-Z5x"/>
+                            <constraint firstItem="gjD-5m-cPb" firstAttribute="centerX" secondItem="Ujt-ly-sZR" secondAttribute="centerX" id="veB-aH-GiF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblname" destination="gjD-5m-cPb" id="TMG-1M-SaK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ri5-h0-IOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="640.79999999999995" y="-106.59670164917542"/>
         </scene>
     </scenes>
     <resources>
